@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "env NODE_ENV=production postcss src/styles.css -o dist/styles.css && cp src/*.html dist/",
+    "build:dev": "postcss src/styles.css -o dist/styles.css && cp src/*.html dist/",
+    "watch": "watch 'npm run build:dev' ./src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {
+    "watch": "^1.0.2"
+  }
+}
