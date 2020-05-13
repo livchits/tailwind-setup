@@ -11,5 +11,5 @@ process.env.NODE_ENV === 'production'
       plugins: [tailwindcss, autoprefixer, purgecss, cssnano],
     })
   : (module.exports = {
-      plugins: [tailwindcss, purgecss],
+      plugins: [tailwindcss],
     });
