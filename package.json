@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "env NODE_ENV=production postcss src/styles.css -o dist/styles.css && cp src/*.html dist/",
-    "build:dev": "postcss src/styles.css -o dist/styles.css && cp src/*.html dist/",
-    "watch": "watch 'npm run build:dev' ./src"
+    "build": "postcss src/styles.css -o dist/styles.css && cp src/*.html dist/",
+    "build:css": "tailwind build src/styles.css -o dist/styles.css && cp src/*.html dist/",
+    "watch": "watch 'npm run build:css' ./src"
   },
   "keywords": [],
   "author": "",
