@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss src/styles.css -o dist/styles.css && cp src/*.html dist/",
-    "build:css": "tailwind build src/styles.css -o dist/styles.css && cp src/*.html dist/",
+    "build": "postcss src/styles.css -o public/styles.css && cp src/*.html public/",
+    "build:css": "tailwind build src/styles.css -o public/styles.css && cp src/*.html public/",
     "watch": "watch 'npm run build:css' ./src"
   },
   "keywords": [],
