@@ -6,7 +6,8 @@
   "scripts": {
     "build": "postcss src/styles.css -o public/styles.css && cp src/*.html public/",
     "build:css": "tailwind build src/styles.css -o public/styles.css && cp src/*.html public/",
-    "watch": "watch 'npm run build:css' ./src"
+    "watch": "watch 'npm run build:css' ./src",
+    "dev": "npm run watch"
   },
   "keywords": [],
   "author": "",
